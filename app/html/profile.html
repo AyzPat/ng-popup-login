@@ -1,0 +1,66 @@
+<style>
+    .image_container {
+        width: 100%;
+        height: 220px;
+        margin: auto;
+    }
+    
+    .toolbar {
+        position: absolute;
+        width: auto;
+        height: 20px;
+        margin: 0px;
+    }
+</style>
+<div flex flex-xs="66" style="margin: 1%;
+    margin-top: 64px;">
+
+    <h3>St.Paul's' Church</h3>
+    <h5>Goa</h5>
+    <div flex flex-xs="66" layout layout-xs="column" style="margin:1%;min-height:auto">
+
+        <div flex="33" flex-xs="66" style="background-color:lightblue;">
+
+
+            <div class="image_container" style="text-align:center">
+                <div class="toolbar">
+                    <i class="material-icons" style="margin: 10px;">add_a_photo</i>
+                </div>
+                <img src="html/img1.jpg" style="width: 96%;height: 100%;margin-top: 2%;">
+            </div>
+            <br>
+            <div hide-xs style="text-align:center">
+                <h4>Followers</h4>
+
+                <h3>hello</h3>
+
+            </div>
+
+        </div>
+        <div flex flex-xs="30" style="background-color:lightgreen;height:100%">
+
+            <md-content class="md-padding">
+                <md-nav-bar nav-bar-aria-label="navigation links" md-selected-nav-item="currentNavItem">
+                    <md-nav-item md-nav-click="goto('about')" name="about" ui-sref='home.profile.about'>About</md-nav-item>
+                    <md-nav-item md-nav-click="goto('contact')" name="contact" ui-sref='home.profile.contact'>Contact Details</md-nav-item>
+                    <md-nav-item md-nav-click="goto('lang')" name="lang" ui-sref='home.profile'>Language and Rites</md-nav-item>
+                </md-nav-bar>
+                <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
+      <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
+      <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
+      -->
+
+                <div class="text-content" autoscroll="true">
+
+
+
+                    <ui-view>
+                    </ui-view>
+
+                </div>
+            </md-content>
+
+
+        </div>
+    </div>
+</div>
